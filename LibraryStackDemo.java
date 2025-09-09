@@ -25,6 +25,9 @@ public class LibraryStackDemo {
             }
             st = new Stack(arr);
         }
+        else {
+        	System.out.println("Invalid choice. exiting....");
+        }
 
         int option;
         do {
@@ -55,7 +58,8 @@ public class LibraryStackDemo {
 
                 case 3:
                     int popped = st.pop();
-                    if (popped != -1) System.out.println("Popped: " + popped);
+                    if (popped != -1) 
+                    	System.out.println("Popped: " + popped);
                     break;
 
                 case 4:
@@ -65,7 +69,7 @@ public class LibraryStackDemo {
                     break;
 
                 case 5:
-                    st.display(100);
+                    st.display(30);
                     break;
 
                 case 6:
